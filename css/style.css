@@ -380,6 +380,10 @@ h3 {
     font-size: 1rem;
     margin: 20px 0;
   }
+
+  .para__container {
+    margin-left: 0;
+  }
 }
 
 @media (min-width: 480px) {
@@ -548,6 +552,10 @@ h3 {
   .about__container p {
     font-size: 1.2rem;
     margin: 0 0;
+  }
+
+  .para__container {
+    margin-left: 20px;
   }
 }
 
