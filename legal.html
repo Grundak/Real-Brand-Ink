@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Tattoo Artist Simon Holomek">
+  <meta name="keywords" content="Tattoo, Ink, Simon">
+  <meta name="author" content="Grundak">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simons Ink</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="preloader">
+    <div class="loader">
+      <h2>We really got here, don't we?</h2>
+    </div>
+  </div>
+  <div id="content">
+    <section class="intro" id="intro">
+
+      <header class="intro__header">
+        <div class="intro__header__logo"><a href="#">Simons Ink</a></div>
+        <ol class="intro__header__menu">
+          <li><a href="./index.html">Back to Ink</a></li>
+        </ol>
+      </header>
+
+      <div class="intro__container">
+        <h1><strong>Simons Ink</strong></h1>
+        <ol>
+            <li>Ing. Šimon Holomek</li>
+            <li>+420 735 963 200</li>
+            <li>U Červených domků 2975/32, 69501, Hodonín</li>
+            <li>IČO: 21072035</li>
+        </ol>
+
+      </div>
+
+    </section>
+
+    <footer class="footer">
+
+      <div class="footer__findings">
+        <a href="">Dev & Des by Grundak</a>
+        <a href="#legal.html">Legal</a>
+      </div>
+      © All rights Reserved
+    </footer>
+  </div>
+  <!-- Preloader -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const preloader = document.getElementById('preloader');
+      const content = document.getElementById('content');
+
+      // Po krátké pauze spusť fade-out preloaderu
+      setTimeout(() => {
+        preloader.classList.add('fade-out'); // Přidá třídu pro fade-out
+
+        // Po dokončení animace odeber preloader a zarovnej stránku nahoru
+        preloader.addEventListener('transitionend', () => {
+          preloader.style.display = 'none';
+          content.classList.add('visible'); // Zobraz obsah
+          window.scrollTo(0, 0); // Nastav scrollování na začátek stránky
+        });
+      }, 2000); // Nastav zpoždění podle potřeby
+    });
+  </script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b717d989c0.js" crossorigin="anonymous"></script>
+  <!-- jQuery CDN Link -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- Lightbox JS -->
+  <script src="lightbox2/dist/js/lightbox.min.js"></script>
+  <!-- Custom js -->
+  <script src="js/main.js"></script>
+  <!-- Option for Lightbox -->
+  <script>
+    lightbox.option({
+      'showImageNumberLabel': false
+    })
+  </script>
+</body>
+
+</html>
